@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+LIBS:heater-cache
+EELAYER 26 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Heater "
+Date "2019-01-04"
+Rev ""
+Comp "FOSSEE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R?
+U 1 1 5C2F30B4
+P 5850 3400
+F 0 "R?" H 5918 3446 50  0000 L CNN
+F 1 "10" H 5918 3355 50  0000 L CNN
+F 2 "" V 5890 3390 50  0001 C CNN
+F 3 "~" H 5850 3400 50  0001 C CNN
+	1    5850 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C2F3120
+P 5850 3000
+F 0 "R?" H 5918 3046 50  0000 L CNN
+F 1 "47" H 5918 2955 50  0000 L CNN
+F 2 "" V 5890 2990 50  0001 C CNN
+F 3 "~" H 5850 3000 50  0001 C CNN
+	1    5850 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5C2F487D
+P 4250 3850
+F 0 "J1" H 4150 4050 50  0000 L CNN
+F 1 "power Input" H 3900 4150 50  0000 L CNN
+F 2 "" H 4250 3850 50  0001 C CNN
+F 3 "~" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3850 3850 3850
+Wire Wire Line
+	4050 3950 3850 3950
+Wire Wire Line
+	4050 4050 3850 4050
+Text Label 3850 3850 2    50   ~ 0
++12V
+Text Label 3850 3950 2    50   ~ 0
++5V
+$Comp
+L power:GND #PWR?
+U 1 1 5C303485
+P 3850 4050
+F 0 "#PWR?" H 3850 3800 50  0001 C CNN
+F 1 "GND" H 3855 3877 50  0000 C CNN
+F 2 "" H 3850 4050 50  0001 C CNN
+F 3 "" H 3850 4050 50  0001 C CNN
+	1    3850 4050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 3750
+$Comp
+L Transistor_BJT:BC517 Q?
+U 1 1 5C303654
+P 5750 3850
+F 0 "Q?" H 5941 3896 50  0000 L CNN
+F 1 "BC517" H 5941 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5950 3775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC517.pdf" H 5750 3850 50  0001 L CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5C307D7B
+P 4600 3850
+F 0 "J2" H 4706 4028 50  0000 C CNN
+F 1 "input uC" H 4706 3937 50  0000 C CNN
+F 2 "" H 4600 3850 50  0001 C CNN
+F 3 "~" H 4600 3850 50  0001 C CNN
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C307DD4
+P 5150 3850
+F 0 "R?" H 5218 3896 50  0000 L CNN
+F 1 "R_US" H 5218 3805 50  0000 L CNN
+F 2 "" V 5190 3840 50  0001 C CNN
+F 3 "~" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3850 5000 3850
+Wire Wire Line
+	5300 3850 5550 3850
+Wire Wire Line
+	5850 3150 5850 3250
+Wire Wire Line
+	5850 3550 5850 3650
+Wire Wire Line
+	5850 2850 5850 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 5C3081C8
+P 5850 2750
+F 0 "#PWR?" H 5850 2600 50  0001 C CNN
+F 1 "+12V" H 5865 2923 50  0000 C CNN
+F 2 "" H 5850 2750 50  0001 C CNN
+F 3 "" H 5850 2750 50  0001 C CNN
+	1    5850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4050 5850 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5C308243
+P 5850 4450
+F 0 "#PWR?" H 5850 4200 50  0001 C CNN
+F 1 "GND" H 5855 4277 50  0000 C CNN
+F 2 "" H 5850 4450 50  0001 C CNN
+F 3 "" H 5850 4450 50  0001 C CNN
+	1    5850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C308B5A
+P 6900 3450
+F 0 "J?" H 6873 3330 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6873 3421 50  0000 R CNN
+F 2 "" H 6900 3450 50  0001 C CNN
+F 3 "~" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 3350 6600 3350
+Wire Wire Line
+	6700 3450 6600 3450
+$EndSCHEMATC

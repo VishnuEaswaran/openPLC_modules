@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:motor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -73,10 +74,7 @@ F 3 "~" H 7350 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6050 3800
-NoConn ~ 6050 4000
-NoConn ~ 5050 4000
 NoConn ~ 5050 3800
-NoConn ~ 5050 4200
 $Comp
 L power:+5V #PWR0102
 U 1 1 5C2DEEA9
@@ -348,4 +346,51 @@ Text Label 3900 4950 2    50   ~ 0
 sw2
 Text Label 3900 5250 2    50   ~ 0
 sw3
+Wire Wire Line
+	4900 4000 5050 4000
+Wire Wire Line
+	5050 4200 4900 4200
+Text Label 4900 4000 0    50   ~ 0
+2a
+Text Label 4900 4200 0    50   ~ 0
+1a
+$Comp
+L Device:R_US R4
+U 1 1 5C332B9A
+P 6200 4250
+F 0 "R4" H 6050 4300 50  0000 L CNN
+F 1 "1K" H 6000 4200 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6240 4240 50  0001 C CNN
+F 3 "~" H 6200 4250 50  0001 C CNN
+	1    6200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4000 6200 4000
+Wire Wire Line
+	6200 4000 6200 4100
+$Comp
+L Device:LED D4
+U 1 1 5C333823
+P 6200 4550
+F 0 "D4" H 6191 4766 50  0000 C CNN
+F 1 "LED" H 6191 4675 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6200 4550 50  0001 C CNN
+F 3 "~" H 6200 4550 50  0001 C CNN
+	1    6200 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C3338C6
+P 6200 4800
+F 0 "#PWR0106" H 6200 4550 50  0001 C CNN
+F 1 "GND" H 6205 4627 50  0000 C CNN
+F 2 "" H 6200 4800 50  0001 C CNN
+F 3 "" H 6200 4800 50  0001 C CNN
+	1    6200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4700 6200 4800
 $EndSCHEMATC
