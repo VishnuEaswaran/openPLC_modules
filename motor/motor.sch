@@ -143,16 +143,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5C2E1CA4
-P 4000 3650
-F 0 "J1" H 3972 3530 50  0000 R CNN
-F 1 "power" H 3972 3621 50  0000 R CNN
-F 2 "Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 4000 3650 50  0001 C CNN
-F 3 "~" H 4000 3650 50  0001 C CNN
-	1    4000 3650
-	-1   0    0    1   
+P 4000 3550
+F 0 "J1" H 3972 3430 50  0000 R CNN
+F 1 "power" H 3972 3521 50  0000 R CNN
+F 2 "Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 4000 3550 50  0001 C CNN
+F 3 "~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 3750 3550 3750
 Wire Wire Line
 	3800 3650 3550 3650
 Wire Wire Line
@@ -174,7 +172,6 @@ Text Label 3550 3650 2    50   ~ 0
 +5V
 Text Label 3550 3750 2    50   ~ 0
 GND
-NoConn ~ 3800 3450
 Wire Wire Line
 	7100 4000 7400 4000
 Wire Wire Line
@@ -393,4 +390,9 @@ F 3 "" H 6200 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4700 6200 4800
+Text Notes 4650 1850 0    197  ~ 0
+Motor Module
+Wire Wire Line
+	3800 3750 3550 3750
+NoConn ~ 3800 3450
 $EndSCHEMATC
