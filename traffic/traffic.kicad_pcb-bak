@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 18)
+    (drawings 19)
     (tracks 58)
     (zones 0)
     (modules 8)
@@ -417,6 +417,18 @@
     )
   )
 
+  (dimension 12.446 (width 0.3) (layer Margin)
+    (gr_text "12.446 mm" (at 146.939 76.132) (layer Margin)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 153.162 83.312) (xy 153.162 77.645579)))
+    (feature2 (pts (xy 140.716 83.312) (xy 140.716 77.645579)))
+    (crossbar (pts (xy 140.716 78.232) (xy 153.162 78.232)))
+    (arrow1a (pts (xy 153.162 78.232) (xy 152.035496 78.818421)))
+    (arrow1b (pts (xy 153.162 78.232) (xy 152.035496 77.645579)))
+    (arrow2a (pts (xy 140.716 78.232) (xy 141.842504 78.818421)))
+    (arrow2b (pts (xy 140.716 78.232) (xy 141.842504 77.645579)))
+  )
   (dimension 19.812 (width 0.3) (layer Margin)
     (gr_text "19.812 mm" (at 124.392 98.806 270) (layer Margin)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
