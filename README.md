@@ -1,8 +1,8 @@
 # OpenPLC Modules
 
 Addon modules for OpenPLC experiments.
-- traffic light
-- motor driver for lift
-- temperature control
-- switches
+- Traffic light
+- Motor driver for lift
+- Heater/temperature control
+- Switches
 

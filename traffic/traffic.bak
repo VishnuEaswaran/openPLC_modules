@@ -85,7 +85,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3200 6550 3200
 Wire Wire Line
-	5350 3050 6050 3050
+	5350 3050 5450 3050
 Wire Wire Line
 	6050 3050 6050 3300
 Wire Wire Line
@@ -115,17 +115,6 @@ F 3 "~" H 5050 4600 50  0001 C CNN
 	1    5050 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 5C2C3C39
-P 5050 4900
-F 0 "#PWR0101" H 5050 4650 50  0001 C CNN
-F 1 "GND" H 5055 4727 50  0000 C CNN
-F 2 "" H 5050 4900 50  0001 C CNN
-F 3 "" H 5050 4900 50  0001 C CNN
-	1    5050 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 4750 5050 4800
 $Comp
@@ -153,4 +142,50 @@ Wire Wire Line
 	5050 4100 5050 4450
 Wire Wire Line
 	5050 3750 5050 4100
+$Comp
+L power:+5C #PWR0101
+U 1 1 5C32F085
+P 4700 4900
+F 0 "#PWR0101" H 4700 4750 50  0001 C CNN
+F 1 "+5C" H 4715 5073 50  0000 C CNN
+F 2 "" H 4700 4900 50  0001 C CNN
+F 3 "" H 4700 4900 50  0001 C CNN
+	1    4700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4900 4900 4900
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5C3CB942
+P 4200 3950
+F 0 "J2" H 4306 4128 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4306 4037 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4200 3950 50  0001 C CNN
+F 3 "~" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4050 4750 4050
+Wire Wire Line
+	4750 4050 4750 4650
+Wire Wire Line
+	4750 4650 4900 4650
+Wire Wire Line
+	4900 4650 4900 4900
+Connection ~ 4900 4900
+Wire Wire Line
+	4900 4900 5050 4900
+Wire Wire Line
+	4400 3950 4750 3950
+Wire Wire Line
+	4750 2900 5450 2900
+Wire Wire Line
+	5450 2900 5450 3050
+Wire Wire Line
+	4750 2900 4750 3950
+Connection ~ 5450 3050
+Wire Wire Line
+	5450 3050 6050 3050
 $EndSCHEMATC
