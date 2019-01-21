@@ -1,0 +1,24 @@
+Source,/home/easwaran/allProjects/kicad/openplc_modules/heater/heater.sch
+Kicad Rev,Eeschema 5.0.1
+Generated Date,Mon 21 Jan 2019 01:25:10 PM IST
+
+Title,Heater 
+Company,FOSSEE
+Revision,Not Set
+Date Issue,2019-01-04
+
+Reference,Value,Library,Library Ref
+R2,27,Device,R_US
+J1,power Input,Connector,Conn_01x04_Female
+Q1,BC517,Transistor_BJT,BC517
+R3,4.7,Device,R_US
+J3,thermistor,Connector,Conn_01x02_Male
+R4,1k,Device,R_US
+Q2,BC517,Transistor_BJT,BC517
+R5,4.7k,Device,R_US
+J4,fan,Connector,Conn_01x02_Male
+J2,MCUpins,Connector,Conn_01x03_Male
+R1,470,Device,R_US
+D1,LED,Device,LED
+R6,470,Device,R_US
+D2,LED,Device,LED

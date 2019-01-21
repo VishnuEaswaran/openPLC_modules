@@ -1,0 +1,18 @@
+Source,/home/easwaran/allProjects/kicad/openplc_modules/traffic/traffic.sch
+Kicad Rev,Eeschema 5.0.1
+Generated Date,Mon 21 Jan 2019 01:24:52 PM IST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+D1,left,Device,LED
+D5,STOP,Device,LED
+D2,GO,Device,LED
+D4,ready,Device,LED
+D3,right,Device,LED
+R1,R,Device,R
+J1,Conn_01x06_Male,Connector,Conn_01x06_Male
+J2,Conn_01x02_Male,Connector,Conn_01x02_Male

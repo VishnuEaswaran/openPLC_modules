@@ -1,0 +1,25 @@
+Source,/home/easwaran/allProjects/kicad/openplc_modules/motor/motor.sch
+Kicad Rev,Eeschema 5.0.1
+Generated Date,Mon 21 Jan 2019 01:25:19 PM IST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+J3,motor,Connector,Screw_Terminal_01x02
+U1,L293D,Driver_Motor,L293D
+J4,towards uC,Connector,Conn_01x05_Male
+J1,power,Connector,Conn_01x04_Male
+J2,from switches,Connector,Conn_01x04_Male
+C2,1uf,Device,C
+C1,1uf,Device,C
+D1,LED,Device,LED
+D2,LED,Device,LED
+D3,LED,Device,LED
+R1,470,Device,R_US
+R2,470,Device,R_US
+R3,470,Device,R_US
+R4,1K,Device,R_US
+D4,error,Device,LED
