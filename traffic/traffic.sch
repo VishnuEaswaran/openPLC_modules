@@ -115,8 +115,6 @@ F 3 "~" H 5050 4600 50  0001 C CNN
 	1    5050 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 4750 5050 4800
 $Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 5C2C6811
@@ -128,13 +126,6 @@ F 3 "~" H 6750 3500 50  0001 C CNN
 	1    6750 3500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5050 4800 6450 4800
-Wire Wire Line
-	6450 4800 6450 3700
-Connection ~ 5050 4800
-Wire Wire Line
-	5050 4800 5050 4900
 Wire Wire Line
 	6550 3700 6450 3700
 Connection ~ 5050 4100
@@ -153,8 +144,6 @@ F 3 "" H 4700 4900 50  0001 C CNN
 	1    4700 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 4900 4900 4900
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5C3CB942
@@ -169,15 +158,6 @@ $EndComp
 Wire Wire Line
 	4400 4050 4750 4050
 Wire Wire Line
-	4750 4050 4750 4650
-Wire Wire Line
-	4750 4650 4900 4650
-Wire Wire Line
-	4900 4650 4900 4900
-Connection ~ 4900 4900
-Wire Wire Line
-	4900 4900 5050 4900
-Wire Wire Line
 	4400 3950 4750 3950
 Wire Wire Line
 	4750 2900 5450 2900
@@ -188,4 +168,32 @@ Wire Wire Line
 Connection ~ 5450 3050
 Wire Wire Line
 	5450 3050 6050 3050
+Wire Wire Line
+	6450 3700 6450 5150
+Wire Wire Line
+	6450 5150 5350 5150
+Wire Wire Line
+	5050 4750 5050 4950
+Wire Wire Line
+	4700 4900 4700 5500
+Wire Wire Line
+	4700 5500 5050 5500
+Wire Wire Line
+	5050 5500 5050 5350
+Connection ~ 4700 4900
+Wire Wire Line
+	4700 4900 4750 4900
+Wire Wire Line
+	4750 4050 4750 4900
+$Comp
+L Transistor_BJT:BC327 Q?
+U 1 1 5C480656
+P 5150 5150
+F 0 "Q?" H 5340 5196 50  0000 L CNN
+F 1 "BC327" H 5340 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5350 5075 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 5150 5150 50  0001 L CNN
+	1    5150 5150
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -791,7 +791,7 @@
   )
 
   (module Symbols:OSHW-Logo2_9.8x8mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5C3CD329)
-    (at 122.428 98.044)
+    (at 123.19 98.044)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     (attr virtual)
@@ -1143,7 +1143,7 @@
   (gr_text "fan\n" (at 156.4 83.5) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.1)))
   )
-  (gr_text "OpenPLC\nFOSSEE" (at 120.142 90.424) (layer F.SilkS)
+  (gr_text "OpenPLC\nFOSSEE" (at 120.142 87.376) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.4)))
   )
   (gr_arc (start 187.200001 99.8) (end 187.2 102.8) (angle -90) (layer Edge.Cuts) (width 0.1))
