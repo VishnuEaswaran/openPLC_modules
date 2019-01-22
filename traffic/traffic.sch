@@ -115,19 +115,6 @@ F 3 "~" H 5050 4600 50  0001 C CNN
 	1    5050 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Male J1
-U 1 1 5C2C6811
-P 6750 3500
-F 0 "J1" H 6723 3380 50  0000 R CNN
-F 1 "Conn_01x06_Male" H 6723 3471 50  0000 R CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 6750 3500 50  0001 C CNN
-F 3 "~" H 6750 3500 50  0001 C CNN
-	1    6750 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6550 3700 6450 3700
 Connection ~ 5050 4100
 Wire Wire Line
 	5050 4100 5050 4450
@@ -136,12 +123,12 @@ Wire Wire Line
 $Comp
 L power:+5C #PWR0101
 U 1 1 5C32F085
-P 4700 4900
-F 0 "#PWR0101" H 4700 4750 50  0001 C CNN
-F 1 "+5C" H 4715 5073 50  0000 C CNN
-F 2 "" H 4700 4900 50  0001 C CNN
-F 3 "" H 4700 4900 50  0001 C CNN
-	1    4700 4900
+P 4600 5500
+F 0 "#PWR0101" H 4600 5350 50  0001 C CNN
+F 1 "+5C" H 4615 5673 50  0000 C CNN
+F 2 "" H 4600 5500 50  0001 C CNN
+F 3 "" H 4600 5500 50  0001 C CNN
+	1    4600 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -169,31 +156,69 @@ Connection ~ 5450 3050
 Wire Wire Line
 	5450 3050 6050 3050
 Wire Wire Line
-	6450 3700 6450 5150
-Wire Wire Line
-	6450 5150 5350 5150
-Wire Wire Line
-	5050 4750 5050 4950
-Wire Wire Line
-	4700 4900 4700 5500
-Wire Wire Line
-	4700 5500 5050 5500
+	5050 4750 5050 4900
 Wire Wire Line
 	5050 5500 5050 5350
-Connection ~ 4700 4900
-Wire Wire Line
-	4700 4900 4750 4900
 Wire Wire Line
 	4750 4050 4750 4900
+Wire Wire Line
+	4750 4900 5050 4900
+Connection ~ 5050 4900
+Wire Wire Line
+	5050 4900 5050 4950
+Wire Wire Line
+	4600 5500 5050 5500
 $Comp
-L Transistor_BJT:BC327 Q?
-U 1 1 5C480656
+L Transistor_BJT:MMBT3906 Q1
+U 1 1 5C485559
 P 5150 5150
-F 0 "Q?" H 5340 5196 50  0000 L CNN
-F 1 "BC327" H 5340 5105 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5350 5075 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 5150 5150 50  0001 L CNN
+F 0 "Q1" H 5340 5196 50  0000 L CNN
+F 1 "MMBT3906" H 5340 5105 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5350 5075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5150 5150 50  0001 L CNN
 	1    5150 5150
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5C2C6811
+P 6750 3500
+F 0 "J1" H 6723 3380 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6723 3471 50  0000 R CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 6750 3500 50  0001 C CNN
+F 3 "~" H 6750 3500 50  0001 C CNN
+	1    6750 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5C485FD5
+P 5250 5500
+F 0 "J3" H 5223 5430 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 5223 5521 50  0000 R CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5250 5500 50  0001 C CNN
+F 3 "~" H 5250 5500 50  0001 C CNN
+	1    5250 5500
+	-1   0    0    1   
+$EndComp
+Connection ~ 5050 5500
+Wire Wire Line
+	6550 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 5150
+Wire Wire Line
+	6400 5150 5950 5150
+Wire Wire Line
+	5350 5150 5650 5150
+$Comp
+L Device:R R2
+U 1 1 5C48B1E4
+P 5800 5150
+F 0 "R2" V 6007 5150 50  0000 C CNN
+F 1 "R" V 5916 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5730 5150 50  0001 C CNN
+F 3 "~" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
